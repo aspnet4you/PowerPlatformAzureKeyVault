@@ -11,13 +11,13 @@ Secret:
 Login to Power Apps: https://make.powerapps.com/environments/your-environment-name/customconnectors
 Create a new custom connector
 
-Overview tab:
+Overview tab: https://github.com/aspnet4you/PowerPlatformAzureKeyVault/blob/main/CC-KeyVaultAccess-General.png
 Add description that is more than 30 characters
 Scheme: HTTPS
 Host: your-keyvalut-fqdn from Azure
 Base URL: /
 
-Security Tab:
+Security Tab: https://github.com/aspnet4you/PowerPlatformAzureKeyVault/blob/main/CC-KeyVaultAccess-Security.png
 Select OAuth 2.0 from Authentication type
 Identity provider: Azure Active Directory
 Check - Enable Service Principal support
@@ -31,7 +31,7 @@ Scope: leave it empty
 Redirect URL: will be auto created after you save/create the connector
 ** Note: Client ID and Client secret are not saved in the definition**
 
-Definition tab:
+Definition tab: https://github.com/aspnet4you/PowerPlatformAzureKeyVault/blob/main/CC-KeyVaultAccess-Definition.png
 Summary: GetSecret
 Description: GetSecret
 Operation ID: GetSecret
@@ -52,6 +52,8 @@ Client Secret:
 Tenant:
 
 Once connection is created successfully, you can go back to Custom connector and jump to Test tab directly
+https://github.com/aspnet4you/PowerPlatformAzureKeyVault/blob/main/Connections-KeyVaultAccess.png
+https://github.com/aspnet4you/PowerPlatformAzureKeyVault/blob/main/CC-KeyVaultAccess-Test.png
 Make sure Selected connection is populated with the connection name that you just created (along with created at date/time)
 You would see GetSecret under Operations
 Enter api-version: 7.4
